@@ -5,5 +5,5 @@ func main() {
     println("Hello World!")
 	/*
 	複数の行をコメント
-    */
+    　　*/
 }
