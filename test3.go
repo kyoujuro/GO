@@ -15,3 +15,11 @@ func main(){
     fmt.Println(input)
     
 }
+
+type  SerialPort_Config  struct{
+    Serial_path string,
+    Rate int,
+    Bits int,
+    Stop int,
+    Prity string,
+}
