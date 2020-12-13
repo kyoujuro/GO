@@ -13,6 +13,13 @@ func main(){
     input, err := reader.ReadString('\n')
     log.Fatal(err)
     fmt.Println(input)
+    var testA map[string]string = map[string]string{"Tokyo":"Tokyo", "Aichi":"Nagoya"}
+	fmt.Println(testA["Aichi"])
+	testB := make(map[string]string)
+	fmt.Println(testB)
+	testC := make(map[string]string, 20)
+	fmt.Println(testC)
+
     
 }
 
