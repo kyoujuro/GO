@@ -54,3 +54,24 @@ func make_array(num int) []int{
     }
     return array
 }
+
+
+func Min(ar []int) (idx, n int) {	
+	n = ar[0]
+	idx = 0
+	for i, tmp := range ar {
+		if n > tmp {
+			n = tmp
+			idx = i
+		}
+	}
+	return
+}
+
+func SelectionSort(ar []int) []int {
+	for i, _ := range ar {
+		idx, _ := Min(ar[i:len(ar)])
+		ar[i], ar[i + idx] = ar[i + idx], ar[i]
+	}
+	return ar
+}
