@@ -1,7 +1,9 @@
 package main
 
-import ("fmt"
-	"time)
+import (
+	"fmt"
+	"time
+	)
 	
 func main() {
 	
