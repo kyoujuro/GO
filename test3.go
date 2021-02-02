@@ -36,3 +36,5 @@ func Factorial(listA []int ){
 		fmt.Printf("2**%d = %d\n", i, v)
 	}
 }
+
+CREATE (a_san:Person { name: "Aさん", 所属: "開発部" }), (b_san:Person { name: "Bさん", 所属: "経理部" }) RETURN a_san, b_san;
