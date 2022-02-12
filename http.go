@@ -15,6 +15,8 @@ func main() {
   req.Header.Set("applicatiom/json")
   client := new(http.Client)
   response, err := client.Do(req)
+  dump, _ := httputil.DumpRequestOut(req, true)
+  fmt.Printf("%s", dump)
   byteArray, _ := ioutil.ReadAll(resp.Body)
   fmt.Println(string(byteArray))
 }
