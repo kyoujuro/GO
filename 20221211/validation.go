@@ -12,3 +12,9 @@ func timestamp_validation(timestamp string) {
 	result := re.MatchString(timestamp)
 	return result
 }
+
+func mail_address_validation(mail_address string){
+	re := 	 regexp.MustCompile(`^[a-zA-Z0-9_.+-]+@+^[a-zA-Z0-9_.+-]`)
+	result := re.MatchString(mail_address)
+	return result
+}
