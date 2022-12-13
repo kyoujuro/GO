@@ -18,3 +18,7 @@ func mail_address_validation(mail_address string){
 	result := re.MatchString(mail_address)
 	return result
 }
+
+func IsEmpty(strings []string) bool {
+	return len(strings) == 0
+}
