@@ -22,3 +22,7 @@ func mail_address_validation(mail_address string){
 func IsEmpty(strings []string) bool {
 	return len(strings) == 0
 }
+func IsBtweenNum(min, max, i){
+	if(min < i && i < max) reuturn true
+	else return false
+}
