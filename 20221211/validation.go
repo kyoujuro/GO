@@ -26,3 +26,8 @@ func IsBtweenNum(min, max, i){
 	if(min < i && i < max) reuturn true
 	else return false
 }
+
+type Address struct {
+	postCode string
+	tel string
+}
